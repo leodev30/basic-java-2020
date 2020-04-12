@@ -1,7 +1,11 @@
 public class Student extends Person{
 		protected String classroom;
 		Student(){
-			
+			super();
+		}
+		Student(String classroom){
+			super();
+			this.classroom = classroom;
 		}
 		public Student(String name, String address, String department){
 			this.name = name;
