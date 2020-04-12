@@ -1,6 +1,11 @@
 public class Teacher extends Person{
 		protected String rank;
 		Teacher(){
+			super();
+		}
+		Teacher(String rank){
+			super();
+			this.rank = rank;
 			
 		}
 		public Teacher(String name, String address, String department, String rank){
