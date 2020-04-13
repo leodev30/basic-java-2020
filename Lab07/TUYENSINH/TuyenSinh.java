@@ -59,10 +59,12 @@ public class TuyenSinh{
 
 	public static void main(String[] args){
 		TuyenSinh ts = new TuyenSinh();
-		ts.setTT();
-		ts.setTT();
-		ts.setTT();
-		ts.setTT();
+		System.out.println("Enter any key to input | Q to Quite");
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine();
+		while(a.compareTo("Q")!=0) {
+			ts.setTT();
+		}
 		System.out.println("So Thi Sinh La "+ts.getSoHocSinh());
 		System.out.println("");
 		ts.printList();
