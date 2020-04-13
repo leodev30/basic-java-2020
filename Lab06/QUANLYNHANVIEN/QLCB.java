@@ -58,11 +58,12 @@ public class QLCB{
 		
 		public static void main(String[] args){
 			QLCB qlcb = new QLCB();
-			qlcb.NhapCB();
-			qlcb.NhapCB();
-			qlcb.NhapCB();
-			qlcb.NhapCB();
-			qlcb.NhapCB();
+			System.out.println("Enter any key to input | Q to Quite");
+			Scanner sc = new Scanner(System.in);
+			String a = sc.nextLine();
+			while(a.compareTo("Q")!=0) {
+				qlcb.NhapCB();
+			}
 			System.out.println("So can bo: "+qlcb.getSoCanBo());
 			qlcb.printList();
 			qlcb.search();
