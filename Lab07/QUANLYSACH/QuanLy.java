@@ -70,10 +70,12 @@ public class QuanLy{
 
 	public static void main(String[] args){
 		QuanLy ql = new QuanLy();
-		ql.setTT();
-		ql.setTT();
-		ql.setTT();
-		ql.setTT();
+		System.out.println("Enter any key to input | Q to Quite");
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine();
+		while(a.compareTo("Q")!=0) {
+			ql.setTT();
+		}
 		System.out.println("So Luong Sach La "+ql.getSoLuong());
 		System.out.println("");
 		ql.printList();
