@@ -9,22 +9,28 @@ public class Composite extends Shape {
     }
     @Override
     public void draw() {
-        super.draw();
+        System.out.println("draw");
+
     }
 
     @Override
     public void rotate(int angle) {
-        super.rotate(angle);
+
+        System.out.println("rotate composite "+ angle);
     }
 
     @Override
     public void moveLeft(int point) {
-        super.moveLeft(point);
+
+        System.out.println("move Left composite"+ point);
+
     }
 
     @Override
     public void setColor(int color) {
-        super.setColor(color);
+
+        System.out.println("Set color composite "+ color);
+
     }
     public void add(Shape shape){
         listShape.add(shape);
