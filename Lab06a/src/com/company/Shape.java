@@ -5,16 +5,8 @@ public abstract class Shape {
     public Shape(){
 
     }
-    public void draw(){
-        System.out.println("draw Shape");
-    }
-    public void rotate(int angle){
-        System.out.println("angle is "+angle);
-    }
-    public void moveLeft(int point){
-        System.out.println("Move Left"+point);
-    }
-    public void setColor(int color){
-        this.color = color;
-    }
+    public abstract void draw();
+    public abstract  void rotate(int angle);
+    public abstract  void moveLeft(int point);
+    public abstract  void setColor(int color);
 }
