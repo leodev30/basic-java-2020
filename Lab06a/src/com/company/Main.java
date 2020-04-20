@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Main{
     public static void main(String[] args){
             List<Shape> figuer = new ArrayList<Shape>();
-            Line line = new Line();
-            Circular cir1 = new Circular();
-            Circular cir2 = new Circular();
+            Shape line = new Line();
+            Shape cir1 = new Circular();
+            Shape cir2 = new Circular();
             Composite com = new Composite();
             figuer.add(line);
             figuer.add(cir1);
