@@ -8,22 +8,28 @@ public class Circular extends Shape {
     }
     @Override
     public void rotate(int angle) {
-        super.rotate(angle);
+
+        System.out.println("this is rotate"+ angle);
     }
 
     @Override
     public void draw() {
-        super.draw();
+
+        System.out.println("This is Circular");
     }
 
     @Override
     public void moveLeft(int point) {
-        super.moveLeft(point);
+
+
+        System.out.println("move Left "+ point);
+
     }
 
     @Override
     public void setColor(int color) {
-        super.setColor(color);
+
+        System.out.println("Set color Circular "+ color);
     }
     public double getArea(){
         return PI*r*r;
