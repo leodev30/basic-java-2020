@@ -31,7 +31,7 @@ public class HocSinh{
 	public String getTT(){
 		return String.format("SBD: %d, HoTen: %s, DiaChi: %s, UuTien: %s",this.soBaoDanh,this.hoTen,this.diaChi,this.uuTien);
 	}
-	public int getSoBaoDanh(){
+	public int getSoBaoDanh(){ 
 		return soBaoDanh;
 	}
 	public String getHoTen(){
